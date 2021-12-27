@@ -1,0 +1,136 @@
+// customizing bootstrap variables
+@import "variables";
+// import bootstrap
+@import "~bootstrap/scss/bootstrap.scss";
+
+// import custom mixins
+@import "mixins";
+// helper classes 
+@import "helpers";
+
+// separate loader for IE and chrome
+@import "/loading/loading-chrome";
+@import "/loading/loading-ie";
+
+@import "navigation";
+@import "panel-header";
+@import "panel-3d";
+@import "panel-hatchery";
+@import "panel-steak";
+@import "panel-last";
+
+// section styles
+@import "/sections/section";
+//@import "/sections/egg-section";
+
+/******************************************************************/
+/****************** VIDEO bg with overlay, 2bd ********************/
+.video-bg-wrap,
+.video-overlay {
+  position: absolute;
+  top: 0;left: 0;
+  right: 0;bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.tsparticles-canvas-el{
+  height:99vh !important;
+}
+
+.video-bg-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.video-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #1C2541 0%, #1C254154 100%);
+  opacity: 1;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+/********************************************************************/
+/********************************************************************/
+
+
+// new fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Kanit:wght@700&display=swap");
+//font-family: 'Inter', sans-serif;
+// font-family: 'Kanit', sans-serif;
+
+// modal content styles
+@import "modal/modal";
+
+html,
+body,
+#root,
+.bg {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+  font-size: 18px;
+}
+
+#root {
+  overflow: hidden;
+} 
+
+body {
+  background: #171717;
+}
+
+h1 > span {
+  white-space: pre;
+}
+
+h1,
+h2,
+p,
+a {
+  color: $font-color;
+}
+//
+//@media only screen and (max-width: 600px) {
+//  a.bottom-left {
+//    display: none;
+//  }
+//}
+
+.panel-on {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.panel-off {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+  a.bottom-left {
+    display: none;
+  }
+}
+
+//@media only screen and (max-width: 500px) {
+//  h1 {
+//    transform: translate3d(-50%, 0%, 0);
+//    font-size: 4em;
+//    letter-spacing: -5px;
+//  }
+//}
+
+.btn {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-width: 2px;
+}

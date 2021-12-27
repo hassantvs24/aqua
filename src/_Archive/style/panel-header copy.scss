@@ -1,0 +1,68 @@
+@import 'variables';
+
+#header-vid {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+  }
+  
+  span.header {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    display: inline-block;
+    width: 500px;
+    transform: translate3d(0, -50%, 0);
+    font-size: 9em;
+    line-height: 0.9em;
+    pointer-events: none;
+    top: 350px;
+    left: 50px;
+  }
+  
+  span.header-left {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    display: inline-block;
+    transform: translate3d(0, -50%, 0);
+    line-height: 1em;
+    top: 200px;
+    left: 60px;
+    font-size: 4em;
+    width: 200px;
+  }
+
+  a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: inherit;
+    position: absolute;
+    display: inline;
+    text-decoration: none;
+    z-index: 1;
+    color: white;
+  }
+  
+  a.top-left {
+    top: 60px;
+    left: 60px;
+  }
+  
+  a.top-right {
+    top: 60px;
+    right: 60px;
+  }
+  
+  a.bottom-left {
+    bottom: 60px;
+    left: 60px;
+  }
+  
+  a.bottom-right {
+    bottom: 60px;
+    right: 60px;
+  }

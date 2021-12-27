@@ -1,0 +1,27 @@
+@import 'variables';
+
+#shallow-water-vid{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:auto;
+  }
+  
+  #egg-canvas{
+    position: absolute !important;
+    top:0 !important;
+    right:0;
+    margin: 0;
+    padding: 0;
+    width: 50%!important;
+    height: 100%;  
+  }
+
+  #egg-text{
+   position: absolute;
+   top: 30%;  
+   left:20%;
+   width: 30%;; 
+  }
+  
